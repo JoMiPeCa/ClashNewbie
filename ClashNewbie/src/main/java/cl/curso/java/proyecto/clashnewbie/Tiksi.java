@@ -18,6 +18,7 @@ import org.pircbotx.hooks.ListenerAdapter;
 import org.pircbotx.hooks.events.MessageEvent;
 import org.pircbotx.hooks.events.PrivateMessageEvent;
 
+@SuppressWarnings("rawtypes")
 public class Tiksi extends ListenerAdapter implements Auxiliador {
 
     private final Map<String, String> nickIRC = Collections.synchronizedMap(new ConcurrentHashMap<String, String>());
